@@ -1,3 +1,128 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+        margin: 0;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    input, textarea, button, select, a {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    main {
+        min-height: 100vh;
+    }
+
+    section, footer {
+        @apply flex justify-center;
+        width: 100%;
+    }
+}
+
+@layer utilities {    
+
+    .contain-size-xl {
+        @apply w-full max-w-screen-xl mx-6;
+    }
+    .contain-size-l {
+        @apply w-full max-w-screen-lg mx-6;
+    }
+    .contain-size-m {
+        @apply w-full max-w-screen-md mx-6;
+    }
+    .contain-size-s {
+        @apply w-full max-w-screen-sm mx-6;
+    }
+    .contain-size-xs {
+        @apply w-full max-w-xl mx-6;
+    }
+
+    .flex-cc {
+        @apply flex justify-center items-center;
+    }
+    .flex-cs {
+        @apply flex justify-center items-start;
+    }
+    .flex-ce {
+        @apply flex justify-center items-end;
+    }
+
+    .flex-sc {
+        @apply flex justify-start items-center;
+    }
+    .flex-ss {
+        @apply flex justify-start items-start;
+    }
+    .flex-se {
+        @apply flex justify-start items-end;
+    }
+
+    .flex-ec {
+        @apply flex justify-evenly items-center;
+    }
+    .flex-es {
+        @apply flex justify-evenly items-start;
+    }
+    .flex-ee {
+        @apply flex justify-evenly items-end;
+    }
+
+    .flex-bc {
+        @apply flex justify-between items-center;
+    }
+    .flex-bs {
+        @apply flex justify-between items-start;
+    }
+    .flex-be {
+        @apply flex justify-between items-end;
+    }
+
+    .flex-vc {
+        @apply flex justify-evenly items-center;
+    }
+    .flex-vs {
+        @apply flex justify-evenly items-start;
+    }
+    .flex-ve {
+        @apply flex justify-evenly items-end;
+    }
+    
+}
+  
