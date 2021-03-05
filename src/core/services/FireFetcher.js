@@ -7,7 +7,6 @@ const profile = (uid, action) => {
 }
 
 export default {
-
     listen : {
         profile
     }
