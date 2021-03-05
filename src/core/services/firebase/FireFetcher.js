@@ -1,4 +1,4 @@
-import { DB } from './firebase'
+import { DB } from './init'
 
 
 //LISTENER - Realtime

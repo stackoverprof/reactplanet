@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { AUTH, GoogleAUTH } from '@core/services/firebase'
-import FireFetcher from '@core/services/FireFetcher'
+import { AUTH, GoogleAUTH } from '@core/services/firebase/init'
+import FireFetcher from '@core/services/firebase/FireFetcher'
 
 const firebaseAuth = React.createContext()
 
